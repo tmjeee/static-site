@@ -7,6 +7,6 @@ import { AlbumsComponent } from './albums/albums.component';
   declarations: [PhotosComponent, AlbumsComponent],
   imports: [
     CommonModule
-  ]
+  ],
 })
 export class MediaModule { }

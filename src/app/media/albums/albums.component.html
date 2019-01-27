@@ -1,3 +1,10 @@
-<p>
-  albums works!
-</p>
+<div class="container-fluid">
+  <div *ngFor="let album of albumsResult" class="row">
+    <div class="col-1">
+      <p>Title</p>
+    </div>
+    <div class="crass=col-6">
+      <p>{{album.title}}</p>
+    </div>
+  </div>
+</div>
