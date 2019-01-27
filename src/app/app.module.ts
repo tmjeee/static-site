@@ -1,16 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RouterModule, Route } from "@angular/router";
+import { PhotosComponent} from "./media/photos/photos.component";
+import {AlbumsComponent} from "./media/albums/albums.component";
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PhotosComponent,
+    AlbumsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot([
+      <Route>{path:'photos', component: PhotosComponent},
+      <Route>{path:'albums', component: AlbumsComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
